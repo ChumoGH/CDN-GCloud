@@ -3,7 +3,7 @@ set -euo pipefail
 
 # Cloud Run siempre inyecta esta variable
 : "${PORT:?La variable PORT debe estar definida por Cloud Run}"
-# Solo pedimos una variable: el destino al que proxyar
+# Solo pedimos una variable: el destino al que proxy
 : "${PROXY_UPSTREAM:?Define PROXY_UPSTREAM (ej: api.example.com:8080 o 10.0.0.5:8000)}"
 
 # Generamos el archivo de configuración de Nginx dinámicamente
